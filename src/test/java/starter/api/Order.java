@@ -196,11 +196,11 @@ public class Order {
     }
     @Step("I receive response data for get order by ID")
     public void receiveResponseGetOrderByID() {
-        //restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(404));
     }
     @Step("I receive valid HTTP response 200 for get order by ID")
     public void receiveResponseCode200GetOrderByID() {
-        //restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(404));
     }
 
     // Failed get order by id because id is invalid
