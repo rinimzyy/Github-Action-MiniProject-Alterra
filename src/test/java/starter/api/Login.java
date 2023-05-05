@@ -15,8 +15,8 @@ public class Login {
     @Step("I send login POST HTTP request and fill body parameter")
     public void sendLogPostHTTPrequest(){
         JSONObject body = new JSONObject();
-        body.put("email","rini@mail.com");
-        body.put("password","123123");
+        body.put("email","rimzynh@mail.com");
+        body.put("password","@Apaaja123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setEndpoints());
     }

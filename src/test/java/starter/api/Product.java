@@ -9,7 +9,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Product {
     protected static String url = "https://altashop-api.fly.dev/api/";
-    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoicmluaUBtYWlsLmNvbSJ9.aVwOOZtxN3obXscWfnNgr8ZQ5-aCgJqRIHhZ69ucah8";
+    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4";
     @Step("I set product endpoint")
     public String setProductEndpoints(){
         return url + "products";
@@ -270,7 +270,7 @@ public class Product {
     //Scenario: TC51 - Give products ratings
     @Step("I POST give products rating endpoints")
     public String postGiveProductsRatingEndpoints() {
-        return url + "products/11672/ratings";
+        return url + "products/12907/ratings";
     }
     @Step("I POST HTTP request for give products ratings")
     public void postHTTPRequestForGiveProductsRatings() {
@@ -279,7 +279,7 @@ public class Product {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoicmluaUBtYWlsLmNvbSJ9.aVwOOZtxN3obXscWfnNgr8ZQ5-aCgJqRIHhZ69ucah8")
+                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4")
                 .contentType("application/json")
                 .post(postGiveProductsRatingEndpoints());
 
@@ -301,7 +301,7 @@ public class Product {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoicmluaUBtYWlsLmNvbSJ9.aVwOOZtxN3obXscWfnNgr8ZQ5-aCgJqRIHhZ69ucah8")
+                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4")
                 .contentType("application/json")
                 .post(postGiveProductsRatingEndpoint());
 

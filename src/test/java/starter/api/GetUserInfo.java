@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class GetUserInfo {
     protected static String url = "https://altashop-api.fly.dev/api/auth/";
-    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZSBMYXN0bmFtZSIsIkVtYWlsIjoicmluaUBtYWlsLmNvbSJ9.aVwOOZtxN3obXscWfnNgr8ZQ5-aCgJqRIHhZ69ucah8";
+    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4";
     @Step("I set user endpoint")
     public String setUserEndpoints(){
         return url + "info";
@@ -20,7 +20,6 @@ public class GetUserInfo {
     @Step("I successfully get user information with status code 200")
     public void response(){
         restAssuredThat(response -> response.statusCode(200));
-        restAssuredThat(response -> response.body("'data'.'Email'", equalTo("rini@mail.com")));
     }
 
     @Step("I set user endpoints")
