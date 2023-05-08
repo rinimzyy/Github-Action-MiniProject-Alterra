@@ -138,7 +138,7 @@ public class ProductCategory {
     //Scenario: TC02 - Get product category by ID
     @Step("I GET product category endpoints by ID")
     public String getProductCategoryByID() {
-        return url + "categories/12502";
+        return url + "categories/12505";
     }
     @Step("I GET HTTP request with valid ID")
     public void getHTTPRequestProductCategoryByID() {

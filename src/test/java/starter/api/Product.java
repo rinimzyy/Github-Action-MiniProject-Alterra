@@ -270,7 +270,7 @@ public class Product {
     //Scenario: TC51 - Give products ratings
     @Step("I POST give products rating endpoints")
     public String postGiveProductsRatingEndpoints() {
-        return url + "products/12907/ratings";
+        return url + "products/14485/ratings";
     }
     @Step("I POST HTTP request for give products ratings")
     public void postHTTPRequestForGiveProductsRatings() {

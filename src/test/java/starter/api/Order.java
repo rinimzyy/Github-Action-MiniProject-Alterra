@@ -185,7 +185,7 @@ public class Order {
     // Get order by ID
     @Step("I GET orders endpoints by ID")
     public String getOrderEndpointsByID() {
-        return url + "orders/9422";
+        return url + "orders/11093";
     }
     @Step("I GET orders HTTP request with valid ID")
     public void getHTTPRequestOrdersByID() {
@@ -196,11 +196,11 @@ public class Order {
     }
     @Step("I receive response data for get order by ID")
     public void receiveResponseGetOrderByID() {
-//        restAssuredThat(response -> response.statusCode(404));
+        restAssuredThat(response -> response.statusCode(200));
     }
     @Step("I receive valid HTTP response 200 for get order by ID")
     public void receiveResponseCode200GetOrderByID() {
-//        restAssuredThat(response -> response.statusCode(404));
+        restAssuredThat(response -> response.statusCode(200));
     }
 
     // Failed get order by id because id is invalid
@@ -223,7 +223,7 @@ public class Order {
     // Failed get order by id because endpoint is invalid
     @Step("I GET orders endpoint by ID")
     public String getOrderEndpointUrlByID() {
-        return url + "pesan/9422";
+        return url + "pesan/11093";
     }
     @Step("I GET orders HTTP request with invalid ID")
     public void getHTTPRequestOrderByIDInvEnd() {
