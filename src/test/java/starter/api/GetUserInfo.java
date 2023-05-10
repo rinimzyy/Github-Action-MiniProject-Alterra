@@ -21,6 +21,7 @@ public class GetUserInfo {
     public void response(){
         restAssuredThat(response -> response.statusCode(200));
     }
+//
 
     @Step("I set user endpoints")
     public String setUserEndpoints2(){
