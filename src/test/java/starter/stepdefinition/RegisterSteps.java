@@ -10,18 +10,18 @@ public class RegisterSteps {
     @Steps
     Register reg;
 
-//    @Given("I set register endpoint")
-//    public void getSetEndpoint() {
-//        reg.setGetEndpoints();
-//    }
-//    @When("I send POST HTTP request and fill body parameter")
-//    public void sendPostRegHTTPReq() {
-//        reg.getHTTPrequest();
-//    }
-//    @Then("I successfully register with status code 200")
-//    public void RegSuccess200() {
-//        reg.response();
-//    }
+    @Given("I set register endpoint")
+    public void getSetEndpoint() {
+        reg.setGetEndpoints();
+    }
+    @When("I send POST HTTP request and fill body parameter")
+    public void sendPostRegHTTPReq() {
+        reg.getHTTPrequest();
+    }
+    @Then("I successfully register with status code 200")
+    public void RegSuccess200() {
+        reg.response();
+    }
 
     @Given("I set register endpoint url")
     public void getRegEndpoint() {

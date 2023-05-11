@@ -2,13 +2,11 @@ package starter.api;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
-
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class GetUserInfo {
     protected static String url = "https://altashop-api.fly.dev/api/auth/";
-    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4";
+    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkhhbG8gQWphIiwiRW1haWwiOiJyaW16eW5oQG1haWwuY29tIn0.IKOBrvQdLKUFljc6ai2Bk4v1lN85uDTvlmhkBdmnU5c";
     @Step("I set user endpoint")
     public String setUserEndpoints(){
         return url + "info";

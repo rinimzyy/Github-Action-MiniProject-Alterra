@@ -1,9 +1,9 @@
 Feature: Register
 
-#  Scenario: AP001 - Successfully register by entering parameter name, valid email, and password
-#    Given I set register endpoint
-#    When I send POST HTTP request and fill body parameter
-#    Then I successfully register with status code 200
+  Scenario: AP001 - Successfully register by entering parameter name, valid email, and password
+    Given I set register endpoint
+    When I send POST HTTP request and fill body parameter
+    Then I successfully register with status code 200
 
   Scenario: AP002 - Failed to register because body is empty
     Given I set register endpoint url

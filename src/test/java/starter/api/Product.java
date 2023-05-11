@@ -9,7 +9,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Product {
     protected static String url = "https://altashop-api.fly.dev/api/";
-    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4";
+    private static final String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkhhbG8gQWphIiwiRW1haWwiOiJyaW16eW5oQG1haWwuY29tIn0.IKOBrvQdLKUFljc6ai2Bk4v1lN85uDTvlmhkBdmnU5c";
     @Step("I set product endpoint")
     public String setProductEndpoints(){
         return url + "products";
@@ -279,7 +279,7 @@ public class Product {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4")
+                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkhhbG8gQWphIiwiRW1haWwiOiJyaW16eW5oQG1haWwuY29tIn0.IKOBrvQdLKUFljc6ai2Bk4v1lN85uDTvlmhkBdmnU5c")
                 .contentType("application/json")
                 .post(postGiveProductsRatingEndpoints());
 
@@ -301,7 +301,7 @@ public class Product {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpbiIsIkVtYWlsIjoicmltenluaEBtYWlsLmNvbSJ9.tf6GhEcKsk15ax63_4d5IL0OR6tD5TE_mYhtaPy7Qf4")
+                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkhhbG8gQWphIiwiRW1haWwiOiJyaW16eW5oQG1haWwuY29tIn0.IKOBrvQdLKUFljc6ai2Bk4v1lN85uDTvlmhkBdmnU5c")
                 .contentType("application/json")
                 .post(postGiveProductsRatingEndpoint());
 

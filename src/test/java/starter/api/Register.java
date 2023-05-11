@@ -8,23 +8,23 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Register {
     protected static String url = "https://altashop-api.fly.dev/api/auth/register";
-//    @Step("I set register endpoint")
-//    public String setGetEndpoints(){
-//        return url;
-//    }
-//    @Step("I send POST HTTP request and fill body parameter")
-//    public void getHTTPrequest(){
-//        JSONObject body = new JSONObject();
-//        body.put("email","abc2@gmail.com");
-//        body.put("password","Apaaja");
-//        body.put("fullname","Siapa Aja");
-//
-//        SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setGetEndpoints());
-//    }
-//    @Step("I successfully register with status code 200")
-//    public void response(){
-//        restAssuredThat(response -> response.statusCode(200));
-//    }
+    @Step("I set register endpoint")
+    public String setGetEndpoints(){
+        return url;
+    }
+    @Step("I send POST HTTP request and fill body parameter")
+    public void getHTTPrequest(){
+        JSONObject body = new JSONObject();
+        body.put("email","abc8@gmail.com");
+        body.put("password","Apaaja");
+        body.put("fullname","Siapa Aja");
+
+        SerenityRest.given().header("Content-Type", "application/json").body(body.toJSONString()).post(setGetEndpoints());
+    }
+    @Step("I successfully register with status code 200")
+    public void response(){
+        restAssuredThat(response -> response.statusCode(200));
+    }
 
     @Step("I set register endpoint url")
     public String setGetEndpoint2(){
