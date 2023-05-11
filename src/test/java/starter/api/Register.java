@@ -15,7 +15,7 @@ public class Register {
 //    @Step("I send POST HTTP request and fill body parameter")
 //    public void getHTTPrequest(){
 //        JSONObject body = new JSONObject();
-//        body.put("email","hm@gmail.com");
+//        body.put("email","abc2@gmail.com");
 //        body.put("password","Apaaja");
 //        body.put("fullname","Siapa Aja");
 //
